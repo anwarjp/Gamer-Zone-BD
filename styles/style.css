@@ -36,6 +36,7 @@ body{
     color: #3C354F;
     font-size: 1.25rem;
     font-weight: 500;
+    cursor: pointer;
 }
 .nav-right button{
     border-radius: 8px;
@@ -139,6 +140,73 @@ body{
 /* play games section ends */
 
 
+/* different-games section starts */
+
+.different-img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 66, 165, 0.03);
+    border-radius: 50px;
+    background: #FFF;
+    padding: 10px 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.different-img:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+}
+
+.different-games-container{
+    padding: 100px 120px 0px 120px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-areas: 
+    "first  second   third   fourth fifth"
+    "sixth sixth  seventh  eighth  ninth "
+    ; */
+}
+/* .first{
+    grid-area: first;
+}
+.second{
+    grid-area: second;
+}
+.third{
+    grid-area: third;
+}
+.fourth{
+    grid-area: fourth;
+}
+.fifth{
+    grid-area: fifth;
+}
+.none{
+    grid-area: none;
+    opacity: 0;
+}
+.sixth{
+    grid-area: sixth;
+}
+.seventh{
+    grid-area: seventh;
+}
+.eighth{
+    grid-area: eighth;
+}
+.ninth{
+    grid-area: ninth;
+} */
+
+
+
+
+
+
+
 
 /* media query */
 /* mobile device */
@@ -174,9 +242,10 @@ body{
     }
 
     .play-games-container{
-        padding: 30px 45px;
+        padding: 30px 45px 0px 45px;
         margin-right: 80px; 
-        gap: 0px; 
+        gap: 0px;
+        
     }
 
     .img2 img {
@@ -187,6 +256,17 @@ body{
         text-align: center;
         margin-left: 80px;
     }
+
+    .different-games-container {
+        padding: 0px 38px;
+        grid-template-columns: repeat(3, 100px);
+        gap: 10px;
+        margin-top: -93px;
+    }
+    .different-img {
+        padding: 10px 20px;
+    }
+
     
 }
 
@@ -237,6 +317,12 @@ body{
     .description-section {
         text-align: center;
         margin-left: 80px;
+    }
+
+    .different-games-container {
+        padding: 0px 38px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
     
     
