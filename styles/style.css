@@ -164,43 +164,56 @@ body{
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(5, 1fr);
-    /* grid-template-areas: 
-    "first  second   third   fourth fifth"
-    "sixth sixth  seventh  eighth  ninth "
-    ; */
 }
-/* .first{
-    grid-area: first;
+.footer-container{
+    background: #0B0223;
+    margin-top: 40px;
+    padding: 60px 240px;
 }
-.second{
-    grid-area: second;
-}
-.third{
-    grid-area: third;
-}
-.fourth{
-    grid-area: fourth;
-}
-.fifth{
-    grid-area: fifth;
-}
-.none{
-    grid-area: none;
-    opacity: 0;
-}
-.sixth{
-    grid-area: sixth;
-}
-.seventh{
-    grid-area: seventh;
-}
-.eighth{
-    grid-area: eighth;
-}
-.ninth{
-    grid-area: ninth;
-} */
 
+.logo{
+    display: flex;
+    justify-content: center;
+   
+}
+.logo h1{
+    color: #fff;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    margin: 40px auto;
+    gap: 10px;
+}
+
+#more-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0px 10px;
+    margin-bottom: 15px;
+}
+#more-links a{
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.social-icon{
+    display: grid;
+    grid-template-columns: repeat(6,50px);
+    justify-content: center;
+    margin: 40px auto;
+}
+
+.social-icon a,
+.links a{
+    color: #fff;
+}
+
+.copyright>small{
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+}
 
 
 
@@ -267,6 +280,28 @@ body{
         padding: 10px 20px;
     }
 
+    .footer-container{
+        background: #0B0223;
+        padding: 60px 40px;
+    }
+
+    .links{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #more-links{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        padding: 0px;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    
+    .social-icon{
+        grid-template-columns: repeat(3,50px);
+        gap: 30px;
+    }
     
 }
 
@@ -325,6 +360,29 @@ body{
         gap: 10px;
     }
     
+    .footer-container{
+        background: #0B0223;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .links{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #more-links{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        padding: 0px;
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    
+    .social-icon{
+        grid-template-columns: repeat(3,50px);
+        gap: 30px;
+    }
     
 }
 
