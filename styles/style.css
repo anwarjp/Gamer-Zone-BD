@@ -111,11 +111,15 @@ body{
     padding: 80px 120px 0px 120px;
     text-align: center;
 }
+.txt{
+    margin-bottom: 250px;
+    display: block;
+}
 .videos-container{
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-top: 15px;
+    position: relative;
 }
 .video-overlay img{
     width: 100%;
@@ -127,10 +131,6 @@ body{
     margin-top: 10px;
 }
 
-.videos-container {
-    position: relative;
-}
-
 .video-one {
     position: relative;
 }
@@ -138,7 +138,6 @@ body{
 .video-overlay {
     position: relative;
     display: inline-block;
-    
 }
 
 .text-overlay {
@@ -162,6 +161,17 @@ body{
     
 }
 
+.video-overlay{
+    border: 2px solid #F948B2 transparent;
+    border-radius: 10px;
+    transition: border 0.3s ease;
+    cursor: pointer;
+    
+}
+.video-one:hover .video-overlay{
+    border: 2px solid #F948B2;  
+}
+
 .play-icon {
     font-size: 40px;
     color: white;
@@ -174,11 +184,6 @@ body{
 
 }
 
-
-.video-one img {
-    width: 100%;
-    height: auto;
-}
 
 .video-one p {
     position: relative;
