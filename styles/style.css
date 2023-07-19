@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@300&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -105,6 +106,92 @@ body{
     vertical-align: bottom;
 }
 /* header section ends */
+
+.video-section{
+    padding: 80px 120px 0px 120px;
+    text-align: center;
+}
+.videos-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+.video-overlay img{
+    width: 100%;
+    height: 100%;
+}
+
+.videos-container p{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.videos-container {
+    position: relative;
+}
+
+.video-one {
+    position: relative;
+}
+
+.video-overlay {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Gray overlay */
+    transition: opacity 0.3s ease;
+ 
+}
+
+.video-overlay:hover .text-overlay {
+    opacity: 1;
+    
+}
+
+.play-icon {
+    font-size: 40px;
+    color: white;
+
+}
+
+.watch-now-text {
+    margin-top: 10px;
+    color: white;
+
+}
+
+
+.video-one img {
+    width: 100%;
+    height: auto;
+}
+
+.video-one p {
+    position: relative;
+    z-index: 1;
+
+}
+
+.text-overlay>i{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
 /* play games section starts */
 .play-games-container{
     display: flex;
@@ -302,6 +389,15 @@ body{
         grid-template-columns: repeat(3,50px);
         gap: 30px;
     }
+
+    .video-section{
+        padding: 20px 40px;
+    }
+
+    .videos-container{
+        flex-direction: column;
+        
+    }
     
 }
 
@@ -384,7 +480,13 @@ body{
         gap: 30px;
     }
     
+    .video-section{
+        padding: 0px 70px;
+    }
 }
 
+.hidden{
+    display: none;
+}
 
   
