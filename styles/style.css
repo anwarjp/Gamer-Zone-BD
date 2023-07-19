@@ -363,7 +363,7 @@ body{
     }
 
     .different-games-container {
-        padding: 0px 38px;
+        padding: 0px 20px;
         grid-template-columns: repeat(3, 100px);
         gap: 10px;
         margin-top: -93px;
@@ -456,7 +456,7 @@ body{
     }
 
     .different-games-container {
-        padding: 0px 38px;
+        padding: 0px 28px;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
