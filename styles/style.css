@@ -61,12 +61,6 @@ body{
 .banner-left{
    margin-left: 120px;
 }
-
-.title{
-    color: #0B0223;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
 .stylish-abbr{
     font-family: Work Sans;
     font-size: 5rem;
@@ -76,11 +70,17 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.title{
+    color: #0B0223;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 
 .banner-left li{
     color: #534C64;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
+    line-height: 30px;
 }
 
 .btn1-banner,.btn2-banner{
@@ -100,12 +100,40 @@ body{
     background:  #4EC5F7;
 }
 
+.icon-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .banner-right img{
     width: 85%;
     height: 85%;
     vertical-align: bottom;
 }
 /* header section ends */
+
+/* gamer section starts */
+.gamer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+    padding: 80px 150px 80px 120px;
+    background-color: rgba(255, 66, 165, 0.03);
+}
+.gamer-img>img{
+    width: 500px;
+    height: 100%;
+}
+.gamer-desc{
+    text-align: end;
+}
+.purpose-txt{
+    display: block;
+    margin: 15px 0px 10px 0px;
+}
+/* gamer section ends */
 
 /* videos section starts*/
 .video-section{
@@ -303,6 +331,7 @@ body{
         padding: 10px 20px;
         gap: 5px;
     }
+    
     .play-games-container, 
     .banner-container{
         flex-direction: column-reverse;
@@ -317,13 +346,39 @@ body{
         background-size: cover; 
         text-align: center; 
     }
+    .icon-text {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
     .banner-right{
         text-align: center;
     }
     .banner-right img{
-        width: 50%;
-        height: 50%;
+        width: 75%;
+        height: 100%;
+      
     }
+    /* gamer starts */
+    .gamer-container{
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 40px 30px 40px;
+        text-align: center;
+    }
+    .gamer-img>img{
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+    }
+    .gamer-desc{
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+    .purpose-txt{
+        margin:10px 0px;
+    }
+    /* gamer ends */
 
     .videos-container{
         flex-direction: column;
@@ -352,6 +407,8 @@ body{
         flex-wrap: wrap;
         padding: 0px;
         margin: 0px;
+        margin-top: -85px;
+        gap: 15px;
     }
 
     .different-img {
@@ -421,18 +478,17 @@ body{
         margin: 0px;
         background-image: url("../images/Group14.png");
         background-repeat: no-repeat; 
-        padding: 140px;
+        padding: 50px 140px 50px 140px;
         background-size: contain;
         text-align: center;
     }
-    
+    .icon-text {
+        margin-left: 20px;
+        font-size: 1.25rem;
+    }
     .banner-right{
         text-align: center;
         gap: 20px;
-    }
-    .banner-right img{
-        width: 50%;
-        height: 50%;
     }
     .play-games-container{
         padding: 0px 70px;
@@ -446,6 +502,19 @@ body{
     .description-section {
         text-align: center;
         margin-left: 80px;
+    }
+
+    .gamer-container{
+        flex-direction: column;
+        gap: 0px;
+        padding: 0px 40px 30px 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .gamer-img>img{
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
     }
 
     .different-games-container {
